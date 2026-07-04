@@ -1,6 +1,6 @@
-# eitaaban
+# Eitaa Bun
 An MTProto client for Eitaa messenger, one the most popular messenger in Iran.
-
+This project provides essential APIs to communicate with Eitaa servers.
 To install dependencies:
 
 ```bash
