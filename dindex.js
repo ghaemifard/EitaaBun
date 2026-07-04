@@ -1,0 +1,9 @@
+
+import  parseResponse   from "./src/mtproto/connection.js"
+
+const isVector = false;
+const ttt = "oJz0ABXEtRwBAAAA4svWhQADAAA7AAAAIhdRWSPIOAMAAAAAIhdRWSPIOAMAAAAAv4WaZgAAAADXcLCcAQAAACs0hx4AAAAAOLX98AIAAAAZQnbuigPdDAiLJfSyAAAAAAAAAL+FmmYPYXBwbGljYXRpb24vemlwugUAAAEAAAAVxLUcAQAAAGgAWRUOd3AtZ2VvLnBocC56aXAAFcS1HAAAAAAVxLUcAAAAABXEtRwAAAAAFcS1HAIAAACw7PY/VwwAAF+sXwMAAAAALX+BJwAAAAAEMTExMQAAAAAAAAAMOTg5MzcxMjA0OTY4AAAASTm57V+Hmmaw7PY/TwEAACPIOAMAAAAA9el8OAAAAAAHRnJlZU5ldAhMaXRyYWxseQAAAAhCb29tMjAwMgAAAEk5ue1fh5pmPipspXEAAAAAAAAAb4aaZgAAAAAAAAAA";
+
+
+const res1 = parseResponse(new Uint8Array(Buffer.from(ttt, 'base64')), isVector ? 'Vector' : '');
+console.log(res1.new_messages[0].media)
